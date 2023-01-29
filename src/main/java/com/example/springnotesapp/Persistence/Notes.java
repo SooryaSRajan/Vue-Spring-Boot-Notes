@@ -1,8 +1,6 @@
 package com.example.springnotesapp.Persistence;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
 
 import java.util.UUID;
 
@@ -10,7 +8,6 @@ import java.util.UUID;
 public class Notes {
 
     @Id
-    //16 char uudi
     private String id = UUID.randomUUID().toString().substring(0, 16);
 
     private String note;
